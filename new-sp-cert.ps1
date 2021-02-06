@@ -13,12 +13,5 @@ $cert.Certificate | Out-File -FilePath ".\cert.pem"
 
 $cert.PrivateKey  | Out-File -FilePath ".\key.pem"
 
-## Test Connection 
+## Use the test-new-sp-cert.ps1 script to test the cert from local.
 
-$Tenant = "#entervalue"
-$url = "#entervalue"
-$ClientId = "#entervalue"
-$PEMCertificate = $cert.Certificate
-$PEMPrivateKey =  $cert.PrivateKey
-
-Connect-pnponline -Tenant $Tenant -url $url -ClientId $ClientId -PEMCertificate $PEMCertificate -PEMPrivateKey $PEMPrivateKey
