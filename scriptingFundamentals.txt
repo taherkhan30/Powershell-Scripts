@@ -1,0 +1,58 @@
+# Foundations of scripting 
+
+# by default doesnt run scripts 
+# execution policy 
+# restricted 
+# remotesigned 
+# Allsigned
+# unrestricted 
+# bypass
+
+# set-executionpolicy  remotesigned 
+
+# get-executionpolicy 
+
+# .\mondaytasks.ps1 
+
+# cannot find cmdlet, cannot run type errors area all to do with execution policy 
+
+# invoke-item . 
+# unblock-file <filepath>
+
+# scope 
+
+# - like a container 
+# - scripts run in their own scope 
+# - global
+# - script 
+# - private 
+# - numbered scope 
+# -you reference something =, ps looks at current scope, then parent e scope then parent up 
+# - PS can only read and write on the current scope 
+# $global:x
+
+# profile settings 
+
+# you can create a profile script 
+# $profile 
+# $profile.currentuserallhosts 
+# $profile.allusercurrenthost 
+# $profile | select *host* | format-list
+# dir $profile 
+# new-item $profile -Force 
+# add-content -Value 'cd c:\scripts' -Path $Profile 
+# add-content -Value 'write-host "hello, how are you" -foregroundcolor magenta 
+
+# Put it in writing 
+
+# automate repitative task 
+# ensure consistency 
+# manage at scale 
+# enhance your career 
+# runs from top to bottom 
+
+see basic-script.ps1
+
+parameterization of scripts 
+
+
