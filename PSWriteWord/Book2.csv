@@ -1,0 +1,76 @@
+ResourceName,ResourceName
+nbsseprodjmp,"Type: Virtual Machine 
+Location: northeurope 
+ResourceGroup: NBSSeProd 
+Scaleset: - 
+Standard Software: WindowsServer 2012-R2-Datacenter"
+nt0vm (node 1),"Type: Virtual Machine 
+Location: northeurope 
+ResourceGroup: NBSSeProd 
+Scaleset: nt0vm 
+Standard Software: WindowsServer 2012-R2-Datacenter"
+nt0vm (node 2),"Type: Virtual Machine 
+Location: northeurope 
+ResourceGroup: NBSSeProd 
+Scaleset: nt0vm 
+Standard Software: WindowsServer 2012-R2-Datacenter"
+nt0vm (node 3),"Type: Virtual Machine 
+Location: northeurope 
+ResourceGroup: NBSSeProd 
+Scaleset: nt0vm 
+Standard Software: WindowsServer 2012-R2-Datacenter"
+nt0vm (node 4),"Type: Virtual Machine 
+Location: northeurope 
+ResourceGroup: NBSSeProd 
+Scaleset: nt0vm 
+Standard Software: WindowsServer 2012-R2-Datacenter"
+nt0vm (node 5),"Type: Virtual Machine 
+Location: northeurope 
+ResourceGroup: NBSSeProd 
+Scaleset: nt0vm 
+Standard Software: WindowsServer 2012-R2-Datacenter"
+nt0vm (node 6),"Type: Virtual Machine 
+Location: northeurope 
+ResourceGroup: NBSSeProd 
+Scaleset: nt0vm 
+Standard Software: WindowsServer 2012-R2-Datacenter"
+nt0vm (node 7),"Type: Virtual Machine 
+Location: northeurope 
+ResourceGroup: NBSSeProd 
+Scaleset: nt0vm 
+Standard Software: WindowsServer 2012-R2-Datacenter"
+nt1vm (node 1),"Type: Virtual Machine 
+Location: northeurope 
+ResourceGroup: NBSSeProd 
+Scaleset: nt1vm 
+Standard Software: WindowsServer 2012-R2-Datacenter"
+nt1vm (node 2),"Type: Virtual Machine 
+Location: northeurope 
+ResourceGroup: NBSSeProd 
+Scaleset: nt1vm 
+Standard Software: WindowsServer 2012-R2-Datacenter"
+nt1vm (node 3),"Type: Virtual Machine 
+Location: northeurope 
+ResourceGroup: NBSSeProd 
+Scaleset: nt1vm 
+Standard Software: WindowsServer 2012-R2-Datacenter"
+nt1vm (node 4),"Type: Virtual Machine 
+Location: northeurope 
+ResourceGroup: NBSSeProd 
+Scaleset: nt1vm 
+Standard Software: WindowsServer 2012-R2-Datacenter"
+nt1vm (node 5),"Type: Virtual Machine 
+Location: northeurope 
+ResourceGroup: NBSSeProd 
+Scaleset: nt1vm 
+Standard Software: WindowsServer 2012-R2-Datacenter"
+nt1vm (node 6),"Type: Virtual Machine 
+Location: northeurope 
+ResourceGroup: NBSSeProd 
+Scaleset: nt1vm 
+Standard Software: WindowsServer 2012-R2-Datacenter"
+nt1vm (node 7),"Type: Virtual Machine 
+Location: northeurope 
+ResourceGroup: NBSSeProd 
+Scaleset: nt1vm 
+Standard Software: WindowsServer 2012-R2-Datacenter"

@@ -86,12 +86,27 @@ Overview
 if <condition> { }
 
 *know the powershell comparison operators 
-eq
-!eq 
+-eq
+-ne 
+-gt
+-ge
+-lt
+-le
+-like 
+-notlike
+-match
+-notmatch 
+-replace
+-contains
+-notcontains
+-in
+-notin
+-is
+-isnot 
 
-if { 
+if () { 
 
-}elseif {
+} elseif {
 
 }else {
 
@@ -100,9 +115,9 @@ if {
 
 example - test of file exists 
 
-<code>
 
-if (test-path c:\files\data.txt){
+
+<code> if (test-path c:\files\data.txt){
     $data = get-content c:\files\data.txt
 }else{
 
@@ -150,9 +165,80 @@ $b -is [array]
 
 <b><i>hashtables</b></i> 
 
+- key value pairs 
+- aks dictionary 
+
+$hash =@{Name="Taher"}
+
+$hash =@{Name="Taher";
+         color="green";
+         Version = $PSVersionTable.PSVersion}
+
+keys need to be unique
+
+write $hash to view the hashtable 
+
+they wont display in order 
+
+modify hash table 
+$hash.add("foo", 1)
+$hash.color = "red"
+
+ordered hash table 
+
+$h = [ordered]@{
+        Name="Taher";
+         color="green";
+         Version = $PSVersionTable.PSVersion
+
+}
+
+Splatting 
+
+$param = @{
+    ComputerName = 'server01'
+    verbose = $true
+}
+
+get-ciminstance @params 
+
+keys have to match parameter names 
+
+
 <b><i>custom objects</b></i> 
 
+select-object 
+new-object 
+[pscustomobject]
+
+dir c:\work -file |
+Select-Object Name, LastWriteTime,
+@{Name=@Size;
+  Expression={$_. Length}},
+@{Name="Age"; Expression={(Get-
+Date) - $_.lastwritetime}} |
+Sort Age - Descending |
+Select-Onject -first 10 
+
+
+
+
 <b><i>try/catch error handling</b></i> 
+
+Try{
+    <code>
+}
+Catch{
+    <the exception object: $_ > 
+}
+
+<code> 
+Try{
+get-service bits -computername $computername -erroraction Stop
+}
+Catch{
+Write-Warning "failed to get service from $computer,$($_.exception.message)"
+}
 
 
 <b>Section 4 -  Powershell Fun</b> 

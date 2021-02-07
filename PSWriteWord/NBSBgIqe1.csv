@@ -1,0 +1,750 @@
+"ResourceName","Configuration"
+"nbsbgiqe1jmp","Type: Virtual Machine 
+Location: northeurope 
+ResourceGroup: NBSBgIqe1 
+VmSize: Standard_A2_v2 
+OSVersion: WindowsServer 2012-R2-Datacenter 
+AdminUsername: SolidsoftNBS 
+vNet: nbsbgiqe1vnet 
+ProvisioningState: Succeeded"
+"nbsbgiqe1appdata","Type: Storage Account 
+Location: northeurope 
+ResourceGroup: NBSBgIqe1 
+SkuName: StandardRAGRS 
+SkuTier: Standard 
+ProvisioningState: Succeeded"
+"nbsbgiqe1audit","Type: Storage Account 
+Location: northeurope 
+ResourceGroup: NBSBgIqe1 
+SkuName: StandardRAGRS 
+SkuTier: Standard 
+ProvisioningState: Succeeded"
+"nbsbgiqe1portalappdata","Type: Storage Account 
+Location: northeurope 
+ResourceGroup: NBSBgIqe1 
+SkuName: StandardRAGRS 
+SkuTier: Standard 
+ProvisioningState: Succeeded"
+"nbsbgiqe1reportdata","Type: Storage Account 
+Location: northeurope 
+ResourceGroup: NBSBgIqe1 
+SkuName: StandardRAGRS 
+SkuTier: Standard 
+ProvisioningState: Succeeded"
+"nbsbgiqe1st1","Type: Storage Account 
+Location: northeurope 
+ResourceGroup: NBSBgIqe1 
+SkuName: StandardLRS 
+SkuTier: Standard 
+ProvisioningState: Succeeded"
+"nbsbgiqe1st2","Type: Storage Account 
+Location: northeurope 
+ResourceGroup: NBSBgIqe1 
+SkuName: StandardLRS 
+SkuTier: Standard 
+ProvisioningState: Succeeded"
+"nbsbgiqe1stdiag1","Type: Storage Account 
+Location: northeurope 
+ResourceGroup: NBSBgIqe1 
+SkuName: StandardLRS 
+SkuTier: Standard 
+ProvisioningState: Succeeded"
+"nbsbgiqe1stlog1","Type: Storage Account 
+Location: northeurope 
+ResourceGroup: NBSBgIqe1 
+SkuName: StandardLRS 
+SkuTier: Standard 
+ProvisioningState: Succeeded"
+"nbsjumpstrfmoye7mu3w5ks","Type: Storage Account 
+Location: northeurope 
+ResourceGroup: NBSBgIqe1 
+SkuName: StandardLRS 
+SkuTier: Standard 
+ProvisioningState: Succeeded"
+"master","Type: SQL Azure Database 
+Location: northeurope 
+ResourceGroup: NBSBgIqe1 
+SqlServerVersion: 12.0 
+SqlAdministratorLogin: nbsidentityadmin 
+CollationName: SQL_Latin1_General_CP1_CI_AS 
+MaxSizeBytes: 32212254720 
+Edition: System 
+Size: System0 
+ProvisioningState: Online"
+"solidsoft.emvs.nbs.identityserver.database","Type: SQL Azure Database 
+Location: northeurope 
+ResourceGroup: NBSBgIqe1 
+SqlServerVersion: 12.0 
+SqlAdministratorLogin: nbsidentityadmin 
+CollationName: SQL_Latin1_General_CP1_CI_AS 
+MaxSizeBytes: 2147483648 
+Edition: Standard 
+Size: S0 
+ProvisioningState: Online"
+"master","Type: SQL Azure Database 
+Location: northeurope 
+ResourceGroup: NBSBgIqe1 
+SqlServerVersion: 12.0 
+SqlAdministratorLogin: nbsorganisationsadmin 
+CollationName: SQL_Latin1_General_CP1_CI_AS 
+MaxSizeBytes: 32212254720 
+Edition: System 
+Size: System0 
+ProvisioningState: Online"
+"solidsoft.emvs.nbs.organisationsadmin.database","Type: SQL Azure Database 
+Location: northeurope 
+ResourceGroup: NBSBgIqe1 
+SqlServerVersion: 12.0 
+SqlAdministratorLogin: nbsorganisationsadmin 
+CollationName: SQL_Latin1_General_CP1_CI_AS 
+MaxSizeBytes: 2147483648 
+Edition: Standard 
+Size: S0 
+ProvisioningState: Online"
+"master","Type: SQL Azure Database 
+Location: westeurope 
+ResourceGroup: NBSBgIqe1 
+SqlServerVersion: 12.0 
+SqlAdministratorLogin: nbsidentityadmin 
+CollationName: SQL_Latin1_General_CP1_CI_AS 
+MaxSizeBytes: 32212254720 
+Edition: System 
+Size: System0 
+ProvisioningState: Online"
+"solidsoft.emvs.nbs.identityserver.database","Type: SQL Azure Database 
+Location: westeurope 
+ResourceGroup: NBSBgIqe1 
+SqlServerVersion: 12.0 
+SqlAdministratorLogin: nbsidentityadmin 
+CollationName: SQL_Latin1_General_CP1_CI_AS 
+MaxSizeBytes: 2147483648 
+Edition: Standard 
+Size: S0 
+ProvisioningState: Online"
+"master","Type: SQL Azure Database 
+Location: westeurope 
+ResourceGroup: NBSBgIqe1 
+SqlServerVersion: 12.0 
+SqlAdministratorLogin: nbsorganisationsadmin 
+CollationName: SQL_Latin1_General_CP1_CI_AS 
+MaxSizeBytes: 32212254720 
+Edition: System 
+Size: System0 
+ProvisioningState: Online"
+"solidsoft.emvs.nbs.organisationsadmin.database","Type: SQL Azure Database 
+Location: westeurope 
+ResourceGroup: NBSBgIqe1 
+SqlServerVersion: 12.0 
+SqlAdministratorLogin: nbsorganisationsadmin 
+CollationName: SQL_Latin1_General_CP1_CI_AS 
+MaxSizeBytes: 2147483648 
+Edition: Standard 
+Size: S0 
+ProvisioningState: Online"
+"nbsbgiqe1vnet","Type: Virtual Network 
+Location: northeurope 
+ResourceGroup: NBSBgIqe1 
+AddressSpace: 10.0.0.0/16 
+Subnets: nbsbgiqe1subnet-0=10.0.1.0/24 nbsbgiqe1subnet-1=10.0.2.0/24 nbsbgiqe1subnet-2=10.0.3.0/24 nbsbgiqe1subnet-3=10.0.0.0/24  
+ProvisioningState: Succeeded"
+"nt0vm","Type: Virtual Machine Scaleset 
+Location: northeurope 
+ResourceGroup: NBSBgIqe1 
+VmSize: Standard_A2_v2 
+Instances: 5 
+Tier: Standard 
+OSVersion: WindowsServer 2012-R2-Datacenter 
+Disks: http://nbsbgiqe1st1.blob.core.windows.net/vhds 
+Extension [nt0vm_ServiceFabricNode] Name: nt0vm_ServiceFabricNode 
+Extension [nt0vm_ServiceFabricNode] Type: ServiceFabricNode 
+Extension [nt0vm_ServiceFabricNode] Publisher: Microsoft.Azure.ServiceFabric 
+Extension [nt0vm_ServiceFabricNode] TypeHandlerVersion: 1.0 
+Extension [VMDiagnosticsVmExtnt0vm] Name: VMDiagnosticsVmExtnt0vm 
+Extension [VMDiagnosticsVmExtnt0vm] Type: IaaSDiagnostics 
+Extension [VMDiagnosticsVmExtnt0vm] Publisher: Microsoft.Azure.Diagnostics 
+Extension [VMDiagnosticsVmExtnt0vm] TypeHandlerVersion: 1.5 
+Extension [runCustomScripts] Name: runCustomScripts 
+Extension [runCustomScripts] Type: CustomScriptExtension 
+Extension [runCustomScripts] Publisher: Microsoft.Compute 
+Extension [runCustomScripts] TypeHandlerVersion: 1.4 
+Network Interface: nbsbgiqe1NIC-0
+AdminUsername: SolidsoftNBS 
+ProvisioningState: Succeeded"
+"nt1vm","Type: Virtual Machine Scaleset 
+Location: northeurope 
+ResourceGroup: NBSBgIqe1 
+VmSize: Standard_D4_v3 
+Instances: 5 
+Tier: Standard 
+OSVersion: WindowsServer 2012-R2-Datacenter 
+Disks: http://nbsbgiqe1st2.blob.core.windows.net/vhds 
+Extension [nt1vm_ServiceFabricNode] Name: nt1vm_ServiceFabricNode 
+Extension [nt1vm_ServiceFabricNode] Type: ServiceFabricNode 
+Extension [nt1vm_ServiceFabricNode] Publisher: Microsoft.Azure.ServiceFabric 
+Extension [nt1vm_ServiceFabricNode] TypeHandlerVersion: 1.0 
+Extension [VMDiagnosticsVmExtnt1vm] Name: VMDiagnosticsVmExtnt1vm 
+Extension [VMDiagnosticsVmExtnt1vm] Type: IaaSDiagnostics 
+Extension [VMDiagnosticsVmExtnt1vm] Publisher: Microsoft.Azure.Diagnostics 
+Extension [VMDiagnosticsVmExtnt1vm] TypeHandlerVersion: 1.5 
+Extension [runCustomScripts] Name: runCustomScripts 
+Extension [runCustomScripts] Type: CustomScriptExtension 
+Extension [runCustomScripts] Publisher: Microsoft.Compute 
+Extension [runCustomScripts] TypeHandlerVersion: 1.4 
+Network Interface: nbsbgiqe1NIC1-0
+AdminUsername: SolidsoftNBS 
+ProvisioningState: Succeeded"
+"nbsaudit","Type: Event Hubs 
+Namespace: nbsbgiqe1-nbs-audit 
+Location: North Europe 
+ResourceGroup: NBSBgIqe1 
+Message Retention(Days): 7 
+Event Hub Status: Active 
+Partitions: 4 
+Sku Name: Standard  
+Sku Capacity: 1  
+Sku Tier: Standard  
+ProvisioningState: Succeeded"
+"nbsbgiqe1IdKV","Type: Key Vault 
+Name: nbsbgiqe1IdKV 
+Location: northeurope 
+ResourceGroup: NBSBgIqe1"
+"nbsbgiqe1-config-document-db","Type: Document Db 
+Namespace: nbsbgiqe1-config-document-db 
+Location: North Europe 
+ResourceGroup: NBSBgIqe1 
+Database Account Offer Type: Standard 
+Throughput:  
+Default Consistency Level: BoundedStaleness  
+Max Interval(sec): 300  
+Max Staleness Prefix: 100000  
+ProvisioningState: Succeeded"
+"nbsbgiqe1-document-db","Type: Document Db 
+Namespace: nbsbgiqe1-document-db 
+Location: North Europe 
+ResourceGroup: NBSBgIqe1 
+Database Account Offer Type: Standard 
+Throughput:  
+Default Consistency Level: Session  
+Max Interval(sec): 5  
+Max Staleness Prefix: 100  
+ProvisioningState: Succeeded"
+"nbsbgiqe1-exception-document-db","Type: Document Db 
+Namespace: nbsbgiqe1-exception-document-db 
+Location: North Europe 
+ResourceGroup: NBSBgIqe1 
+Database Account Offer Type: Standard 
+Throughput:  
+Default Consistency Level: BoundedStaleness  
+Max Interval(sec): 300  
+Max Staleness Prefix: 100000  
+ProvisioningState: Succeeded"
+"nbsbgiqe1tm","Type: Traffic Manager Profile 
+Namespace: nbsbgiqe1tm 
+Location:  
+ResourceGroup: NBSBgIqe1 
+Name: nbsbgiqe1tm 
+RelativeDnsName: nbsbgiqe1 
+Ttl: 300 
+ProfileStatus: Enabled 
+TrafficRoutingMethod: Priority 
+MonitorProtocol: HTTPS 
+MonitorPort: 8640 
+MonitorPath: /Home/Error 
+Endpoints[0].Name: sfpublicipaddress 
+Endpoints[0].ProfileName: nbsbgiqe1tm 
+Endpoints[0].ResourceGroupName: NBSBgIqe1 
+Endpoints[0].Target: nbsbgiqe1appgateway.northeurope.cloudapp.azure.com 
+Endpoints[0].EndpointStatus: Enabled 
+Endpoints[0].Weight: 1 
+Endpoints[0].Priority: 1 
+Endpoints[0].EndpointMonitorStatus:  
+ProvisioningState: "
+"nbsbgiqe1PublicIP-LB-FE-0","Type: Public IP Address 
+Namespace: nbsbgiqe1PublicIP-LB-FE-0 
+Location: northeurope 
+ResourceGroup: NBSBgIqe1 
+Name: nbsbgiqe1PublicIP-LB-FE-0 
+PublicIpAllocationMethod: Static 
+IpConfiguration: Microsoft.Azure.Commands.Network.Models.PSIPConfiguration 
+DnsSettings: Microsoft.Azure.Commands.Network.Models.PSPublicIpAddressDnsSettings 
+IpAddress: 52.138.176.187 
+ProvisioningState: Succeeded"
+"nbsbgiqe1PublicIP-LB-FE-1","Type: Public IP Address 
+Namespace: nbsbgiqe1PublicIP-LB-FE-1 
+Location: northeurope 
+ResourceGroup: NBSBgIqe1 
+Name: nbsbgiqe1PublicIP-LB-FE-1 
+PublicIpAllocationMethod: Dynamic 
+IpConfiguration: Microsoft.Azure.Commands.Network.Models.PSIPConfiguration 
+DnsSettings: Microsoft.Azure.Commands.Network.Models.PSPublicIpAddressDnsSettings 
+IpAddress: 52.138.179.97 
+ProvisioningState: Succeeded"
+"nbsbgiqe1PublicIP-LB-FE-2","Type: Public IP Address 
+Namespace: nbsbgiqe1PublicIP-LB-FE-2 
+Location: northeurope 
+ResourceGroup: NBSBgIqe1 
+Name: nbsbgiqe1PublicIP-LB-FE-2 
+PublicIpAllocationMethod: Dynamic 
+IpConfiguration: Microsoft.Azure.Commands.Network.Models.PSIPConfiguration 
+DnsSettings: Microsoft.Azure.Commands.Network.Models.PSPublicIpAddressDnsSettings 
+IpAddress: Not Assigned 
+ProvisioningState: Succeeded"
+"nbsbgiqe1PublicIP-LB-FE-appGateWay","Type: Public IP Address 
+Namespace: nbsbgiqe1PublicIP-LB-FE-appGateWay 
+Location: northeurope 
+ResourceGroup: NBSBgIqe1 
+Name: nbsbgiqe1PublicIP-LB-FE-appGateWay 
+PublicIpAllocationMethod: Dynamic 
+IpConfiguration: Microsoft.Azure.Commands.Network.Models.PSIPConfiguration 
+DnsSettings: Microsoft.Azure.Commands.Network.Models.PSPublicIpAddressDnsSettings 
+IpAddress: 40.113.76.230 
+ProvisioningState: Succeeded"
+"LB-nbsbgiqe1-nt0vm","Type: Load Balancer 
+Name: LB-nbsbgiqe1-nt0vm 
+Location: northeurope 
+ResourceGroup: NBSBgIqe1 
+FrontendIpConfigurations[0].Name: LoadBalancerIPConfig 
+FrontendIpConfigurations[0].PrivateIpAddress:  
+FrontendIpConfigurations[0].PrivateIpAddressAllocationMethod:  
+FrontendIpConfigurations[0].PublicIpAddress: Microsoft.Azure.Commands.Network.Models.PSPublicIpAddress 
+BackendAddressPools[0].Name: LoadBalancerBEAddressPool 
+LoadBalancingRules[0].Name: LBRule 
+LoadBalancingRules[0].FrontendPort: 19000 
+LoadBalancingRules[0].BackendPort: 19000 
+LoadBalancingRules[0].Protocol: Tcp 
+LoadBalancingRules[0].IdleTimeoutInMininutes:  
+LoadBalancingRules[0].EnableFloatingIP: False 
+LoadBalancingRules[1].Name: LBHttpRule 
+LoadBalancingRules[1].FrontendPort: 19080 
+LoadBalancingRules[1].BackendPort: 19080 
+LoadBalancingRules[1].Protocol: Tcp 
+LoadBalancingRules[1].IdleTimeoutInMininutes:  
+LoadBalancingRules[1].EnableFloatingIP: False 
+LoadBalancingRules[2].Name: webHttpsRule 
+LoadBalancingRules[2].FrontendPort: 443 
+LoadBalancingRules[2].BackendPort: 443 
+LoadBalancingRules[2].Protocol: Tcp 
+LoadBalancingRules[2].IdleTimeoutInMininutes:  
+LoadBalancingRules[2].EnableFloatingIP: False 
+LoadBalancingRules[3].Name: identityServerRule 
+LoadBalancingRules[3].FrontendPort: 8637 
+LoadBalancingRules[3].BackendPort: 8637 
+LoadBalancingRules[3].Protocol: Tcp 
+LoadBalancingRules[3].IdleTimeoutInMininutes:  
+LoadBalancingRules[3].EnableFloatingIP: False 
+LoadBalancingRules[4].Name: emergencyPortalRule 
+LoadBalancingRules[4].FrontendPort: 8641 
+LoadBalancingRules[4].BackendPort: 8641 
+LoadBalancingRules[4].Protocol: Tcp 
+LoadBalancingRules[4].IdleTimeoutInMininutes:  
+LoadBalancingRules[4].EnableFloatingIP: False 
+LoadBalancingRules[5].Name: adminPortalRule 
+LoadBalancingRules[5].FrontendPort: 8640 
+LoadBalancingRules[5].BackendPort: 8640 
+LoadBalancingRules[5].Protocol: Tcp 
+LoadBalancingRules[5].IdleTimeoutInMininutes:  
+LoadBalancingRules[5].EnableFloatingIP: False 
+LoadBalancingRules[6].Name: localOrganisationRule 
+LoadBalancingRules[6].FrontendPort: 8978 
+LoadBalancingRules[6].BackendPort: 8978 
+LoadBalancingRules[6].Protocol: Tcp 
+LoadBalancingRules[6].IdleTimeoutInMininutes:  
+LoadBalancingRules[6].EnableFloatingIP: False 
+LoadBalancingRules[7].Name: usersAdminApiRule 
+LoadBalancingRules[7].FrontendPort: 8317 
+LoadBalancingRules[7].BackendPort: 8317 
+LoadBalancingRules[7].Protocol: Tcp 
+LoadBalancingRules[7].IdleTimeoutInMininutes:  
+LoadBalancingRules[7].EnableFloatingIP: False 
+LoadBalancingRules[8].Name: localOrganisationsAdminApiRule 
+LoadBalancingRules[8].FrontendPort: 8258 
+LoadBalancingRules[8].BackendPort: 8258 
+LoadBalancingRules[8].Protocol: Tcp 
+LoadBalancingRules[8].IdleTimeoutInMininutes:  
+LoadBalancingRules[8].EnableFloatingIP: False 
+LoadBalancingRules[9].Name: clientCredentialsAdminApiRule 
+LoadBalancingRules[9].FrontendPort: 8985 
+LoadBalancingRules[9].BackendPort: 8985 
+LoadBalancingRules[9].Protocol: Tcp 
+LoadBalancingRules[9].IdleTimeoutInMininutes:  
+LoadBalancingRules[9].EnableFloatingIP: False 
+LoadBalancingRules[10].Name: hubGatewayRule 
+LoadBalancingRules[10].FrontendPort: 8201 
+LoadBalancingRules[10].BackendPort: 8201 
+LoadBalancingRules[10].Protocol: Tcp 
+LoadBalancingRules[10].IdleTimeoutInMininutes:  
+LoadBalancingRules[10].EnableFloatingIP: False 
+LoadBalancingRules[11].Name: intermarketServiceRule 
+LoadBalancingRules[11].FrontendPort: 8202 
+LoadBalancingRules[11].BackendPort: 8202 
+LoadBalancingRules[11].Protocol: Tcp 
+LoadBalancingRules[11].IdleTimeoutInMininutes:  
+LoadBalancingRules[11].EnableFloatingIP: False 
+LoadBalancingRules[12].Name: reportApiRule 
+LoadBalancingRules[12].FrontendPort: 8993 
+LoadBalancingRules[12].BackendPort: 8993 
+LoadBalancingRules[12].Protocol: Tcp 
+LoadBalancingRules[12].IdleTimeoutInMininutes:  
+LoadBalancingRules[12].EnableFloatingIP: False 
+Probes[0].Name: FabricGatewayProbe 
+Probes[0].Port: 19000 
+Probes[0].Protocol: Tcp 
+Probes[0].IntervalInSeconds: 5 
+Probes[0].NumberOfProbes: 2 
+Probes[0].RequestPath:  
+Probes[1].Name: FabricHttpGatewayProbe 
+Probes[1].Port: 19080 
+Probes[1].Protocol: Tcp 
+Probes[1].IntervalInSeconds: 5 
+Probes[1].NumberOfProbes: 2 
+Probes[1].RequestPath:  
+Probes[2].Name: webHttpsProbe 
+Probes[2].Port: 443 
+Probes[2].Protocol: Tcp 
+Probes[2].IntervalInSeconds: 5 
+Probes[2].NumberOfProbes: 2 
+Probes[2].RequestPath:  
+Probes[3].Name: identityServerProbe 
+Probes[3].Port: 8637 
+Probes[3].Protocol: Tcp 
+Probes[3].IntervalInSeconds: 5 
+Probes[3].NumberOfProbes: 2 
+Probes[3].RequestPath:  
+Probes[4].Name: localOrganisationProbe 
+Probes[4].Port: 8978 
+Probes[4].Protocol: Tcp 
+Probes[4].IntervalInSeconds: 5 
+Probes[4].NumberOfProbes: 2 
+Probes[4].RequestPath:  
+Probes[5].Name: emergencyPortalProbe 
+Probes[5].Port: 8641 
+Probes[5].Protocol: Tcp 
+Probes[5].IntervalInSeconds: 5 
+Probes[5].NumberOfProbes: 2 
+Probes[5].RequestPath:  
+Probes[6].Name: adminPortalProbe 
+Probes[6].Port: 8640 
+Probes[6].Protocol: Tcp 
+Probes[6].IntervalInSeconds: 5 
+Probes[6].NumberOfProbes: 2 
+Probes[6].RequestPath:  
+Probes[7].Name: usersAdminApiProbe 
+Probes[7].Port: 8317 
+Probes[7].Protocol: Tcp 
+Probes[7].IntervalInSeconds: 5 
+Probes[7].NumberOfProbes: 2 
+Probes[7].RequestPath:  
+Probes[8].Name: localOrganisationsAdminApiProbe 
+Probes[8].Port: 8258 
+Probes[8].Protocol: Tcp 
+Probes[8].IntervalInSeconds: 5 
+Probes[8].NumberOfProbes: 2 
+Probes[8].RequestPath:  
+Probes[9].Name: clientCredentialsAdminApiProbe 
+Probes[9].Port: 8985 
+Probes[9].Protocol: Tcp 
+Probes[9].IntervalInSeconds: 5 
+Probes[9].NumberOfProbes: 2 
+Probes[9].RequestPath:  
+Probes[10].Name: hubGatewayProbe 
+Probes[10].Port: 8201 
+Probes[10].Protocol: Tcp 
+Probes[10].IntervalInSeconds: 5 
+Probes[10].NumberOfProbes: 2 
+Probes[10].RequestPath:  
+Probes[11].Name: intermarketServiceProbe 
+Probes[11].Port: 8202 
+Probes[11].Protocol: Tcp 
+Probes[11].IntervalInSeconds: 5 
+Probes[11].NumberOfProbes: 2 
+Probes[11].RequestPath:  
+Probes[12].Name: reportApiProbe 
+Probes[12].Port: 8993 
+Probes[12].Protocol: Tcp 
+Probes[12].IntervalInSeconds: 5 
+Probes[12].NumberOfProbes: 2 
+Probes[12].RequestPath:  
+InboundNatPools[0].Name: LoadBalancerBEAddressNatPool 
+InboundNatPools[0].FrontendPortRangeStart: 3389 
+InboundNatPools[0].FrontendPortRangeEnd: 4500 
+InboundNatPools[0].BackendPort: 3389 
+InboundNatPools[0].Protocol: Tcp 
+ProvisioningState: Succeeded"
+"LB-nbsbgiqe1-nt1vm","Type: Load Balancer 
+Name: LB-nbsbgiqe1-nt1vm 
+Location: northeurope 
+ResourceGroup: NBSBgIqe1 
+FrontendIpConfigurations[0].Name: LoadBalancerIPConfig 
+FrontendIpConfigurations[0].PrivateIpAddress:  
+FrontendIpConfigurations[0].PrivateIpAddressAllocationMethod:  
+FrontendIpConfigurations[0].PublicIpAddress: Microsoft.Azure.Commands.Network.Models.PSPublicIpAddress 
+BackendAddressPools[0].Name: LoadBalancerBEAddressPool 
+LoadBalancingRules[0].Name: LBRule1 
+LoadBalancingRules[0].FrontendPort: 19000 
+LoadBalancingRules[0].BackendPort: 19000 
+LoadBalancingRules[0].Protocol: Tcp 
+LoadBalancingRules[0].IdleTimeoutInMininutes:  
+LoadBalancingRules[0].EnableFloatingIP: False 
+LoadBalancingRules[1].Name: LBHttpRule 
+LoadBalancingRules[1].FrontendPort: 19080 
+LoadBalancingRules[1].BackendPort: 19080 
+LoadBalancingRules[1].Protocol: Tcp 
+LoadBalancingRules[1].IdleTimeoutInMininutes:  
+LoadBalancingRules[1].EnableFloatingIP: False 
+LoadBalancingRules[2].Name: webHttpsRule 
+LoadBalancingRules[2].FrontendPort: 443 
+LoadBalancingRules[2].BackendPort: 443 
+LoadBalancingRules[2].Protocol: Tcp 
+LoadBalancingRules[2].IdleTimeoutInMininutes:  
+LoadBalancingRules[2].EnableFloatingIP: False 
+Probes[0].Name: FabricGatewayProbe 
+Probes[0].Port: 19000 
+Probes[0].Protocol: Tcp 
+Probes[0].IntervalInSeconds: 5 
+Probes[0].NumberOfProbes: 2 
+Probes[0].RequestPath:  
+Probes[1].Name: FabricHttpGatewayProbe 
+Probes[1].Port: 19080 
+Probes[1].Protocol: Tcp 
+Probes[1].IntervalInSeconds: 5 
+Probes[1].NumberOfProbes: 2 
+Probes[1].RequestPath:  
+Probes[2].Name: webHttpsProbe 
+Probes[2].Port: 443 
+Probes[2].Protocol: Tcp 
+Probes[2].IntervalInSeconds: 5 
+Probes[2].NumberOfProbes: 2 
+Probes[2].RequestPath:  
+InboundNatPools[0].Name: LoadBalancerBEAddressNatPool 
+InboundNatPools[0].FrontendPortRangeStart: 3389 
+InboundNatPools[0].FrontendPortRangeEnd: 4500 
+InboundNatPools[0].BackendPort: 3389 
+InboundNatPools[0].Protocol: Tcp 
+ProvisioningState: Succeeded"
+"nbsbgiqe1nbsbgiqe1jmpnsg","Type: Network Security Group 
+Name: nbsbgiqe1nbsbgiqe1jmpnsg 
+Namespace: nbsbgiqe1nbsbgiqe1jmpnsg 
+Location: northeurope 
+ResourceGroup: NBSBgIqe1 
+Subnets: nbsbgiqe1subnet-2 
+SecurityRules[0].Name: allow-rdp-In 
+SecurityRules[0].Description: Allow RDP IN 
+SecurityRules[0].SourceAddressPrefix: * 
+SecurityRules[0].Access: Allow 
+SecurityRules[1].Name: Deny-All-Inbound 
+SecurityRules[1].Description: Deny-All-Inbound 
+SecurityRules[1].SourceAddressPrefix: * 
+SecurityRules[1].Access: Deny 
+SecurityRules[2].Name: Allow-All-Outbound 
+SecurityRules[2].Description: Allow-All-Outbound 
+SecurityRules[2].SourceAddressPrefix: * 
+SecurityRules[2].Access: Allow 
+Network Interfaces: 
+DefaultSecurityRules[0].Name: AllowVnetInBound 
+DefaultSecurityRules[0].Description: Allow inbound traffic from all VMs in VNET 
+DefaultSecurityRules[0].SourceAddressPrefix: VirtualNetwork 
+DefaultSecurityRules[0].Access: Allow 
+DefaultSecurityRules[1].Name: AllowAzureLoadBalancerInBound 
+DefaultSecurityRules[1].Description: Allow inbound traffic from azure load balancer 
+DefaultSecurityRules[1].SourceAddressPrefix: AzureLoadBalancer 
+DefaultSecurityRules[1].Access: Allow 
+DefaultSecurityRules[2].Name: DenyAllInBound 
+DefaultSecurityRules[2].Description: Deny all inbound traffic 
+DefaultSecurityRules[2].SourceAddressPrefix: * 
+DefaultSecurityRules[2].Access: Deny 
+DefaultSecurityRules[3].Name: AllowVnetOutBound 
+DefaultSecurityRules[3].Description: Allow outbound traffic from all VMs to all VMs in VNET 
+DefaultSecurityRules[3].SourceAddressPrefix: VirtualNetwork 
+DefaultSecurityRules[3].Access: Allow 
+DefaultSecurityRules[4].Name: AllowInternetOutBound 
+DefaultSecurityRules[4].Description: Allow outbound traffic from all VMs to Internet 
+DefaultSecurityRules[4].SourceAddressPrefix: * 
+DefaultSecurityRules[4].Access: Allow 
+DefaultSecurityRules[5].Name: DenyAllOutBound 
+DefaultSecurityRules[5].Description: Deny all outbound traffic 
+DefaultSecurityRules[5].SourceAddressPrefix: * 
+DefaultSecurityRules[5].Access: Deny 
+ProvisioningState: Succeeded"
+"nbsbgiqe1ssnsg0","Type: Network Security Group 
+Name: nbsbgiqe1ssnsg0 
+Namespace: nbsbgiqe1ssnsg0 
+Location: northeurope 
+ResourceGroup: NBSBgIqe1 
+Subnets: nbsbgiqe1subnet-0 
+SecurityRules[0].Name: allowSvcFabSMB 
+SecurityRules[0].Description:  
+SecurityRules[0].SourceAddressPrefix: VirtualNetwork 
+SecurityRules[0].Access: Allow 
+SecurityRules[1].Name: allowSvcFabCluser 
+SecurityRules[1].Description:  
+SecurityRules[1].SourceAddressPrefix: VirtualNetwork 
+SecurityRules[1].Access: Allow 
+SecurityRules[2].Name: allowSvcFabEphemeral 
+SecurityRules[2].Description:  
+SecurityRules[2].SourceAddressPrefix: VirtualNetwork 
+SecurityRules[2].Access: Allow 
+SecurityRules[3].Name: allowSvcFabPortal 
+SecurityRules[3].Description:  
+SecurityRules[3].SourceAddressPrefix: * 
+SecurityRules[3].Access: Allow 
+SecurityRules[4].Name: allowSvcFabClient 
+SecurityRules[4].Description:  
+SecurityRules[4].SourceAddressPrefix: * 
+SecurityRules[4].Access: Allow 
+SecurityRules[5].Name: allowVNetRDP 
+SecurityRules[5].Description:  
+SecurityRules[5].SourceAddressPrefix: VirtualNetwork 
+SecurityRules[5].Access: Allow 
+SecurityRules[6].Name: Allow-443 
+SecurityRules[6].Description: Allow-443 
+SecurityRules[6].SourceAddressPrefix: * 
+SecurityRules[6].Access: Allow 
+SecurityRules[7].Name: Allow-8637 
+SecurityRules[7].Description: Allow-8637 
+SecurityRules[7].SourceAddressPrefix: * 
+SecurityRules[7].Access: Allow 
+SecurityRules[8].Name: Allow-8978 
+SecurityRules[8].Description: Allow-8978 
+SecurityRules[8].SourceAddressPrefix: * 
+SecurityRules[8].Access: Allow 
+SecurityRules[9].Name: Allow-8640 
+SecurityRules[9].Description: Allow-8640 
+SecurityRules[9].SourceAddressPrefix: * 
+SecurityRules[9].Access: Allow 
+SecurityRules[10].Name: Allow-8317 
+SecurityRules[10].Description: Allow-8317 
+SecurityRules[10].SourceAddressPrefix: * 
+SecurityRules[10].Access: Allow 
+SecurityRules[11].Name: Allow-8258 
+SecurityRules[11].Description: Allow-8258 
+SecurityRules[11].SourceAddressPrefix: * 
+SecurityRules[11].Access: Allow 
+SecurityRules[12].Name: Allow-8985 
+SecurityRules[12].Description: Allow-8985 
+SecurityRules[12].SourceAddressPrefix: * 
+SecurityRules[12].Access: Allow 
+SecurityRules[13].Name: Allow-8201 
+SecurityRules[13].Description: Allow-8201 
+SecurityRules[13].SourceAddressPrefix: * 
+SecurityRules[13].Access: Allow 
+SecurityRules[14].Name: Allow-8202 
+SecurityRules[14].Description: Allow-8202 
+SecurityRules[14].SourceAddressPrefix: * 
+SecurityRules[14].Access: Allow 
+SecurityRules[15].Name: Allow-8993 
+SecurityRules[15].Description: Allow-8993 
+SecurityRules[15].SourceAddressPrefix: * 
+SecurityRules[15].Access: Allow 
+SecurityRules[16].Name: Allow-8641 
+SecurityRules[16].Description: Allow-8641 
+SecurityRules[16].SourceAddressPrefix: * 
+SecurityRules[16].Access: Allow 
+Network Interfaces: 
+DefaultSecurityRules[0].Name: AllowVnetInBound 
+DefaultSecurityRules[0].Description: Allow inbound traffic from all VMs in VNET 
+DefaultSecurityRules[0].SourceAddressPrefix: VirtualNetwork 
+DefaultSecurityRules[0].Access: Allow 
+DefaultSecurityRules[1].Name: AllowAzureLoadBalancerInBound 
+DefaultSecurityRules[1].Description: Allow inbound traffic from azure load balancer 
+DefaultSecurityRules[1].SourceAddressPrefix: AzureLoadBalancer 
+DefaultSecurityRules[1].Access: Allow 
+DefaultSecurityRules[2].Name: DenyAllInBound 
+DefaultSecurityRules[2].Description: Deny all inbound traffic 
+DefaultSecurityRules[2].SourceAddressPrefix: * 
+DefaultSecurityRules[2].Access: Deny 
+DefaultSecurityRules[3].Name: AllowVnetOutBound 
+DefaultSecurityRules[3].Description: Allow outbound traffic from all VMs to all VMs in VNET 
+DefaultSecurityRules[3].SourceAddressPrefix: VirtualNetwork 
+DefaultSecurityRules[3].Access: Allow 
+DefaultSecurityRules[4].Name: AllowInternetOutBound 
+DefaultSecurityRules[4].Description: Allow outbound traffic from all VMs to Internet 
+DefaultSecurityRules[4].SourceAddressPrefix: * 
+DefaultSecurityRules[4].Access: Allow 
+DefaultSecurityRules[5].Name: DenyAllOutBound 
+DefaultSecurityRules[5].Description: Deny all outbound traffic 
+DefaultSecurityRules[5].SourceAddressPrefix: * 
+DefaultSecurityRules[5].Access: Deny 
+ProvisioningState: Succeeded"
+"nbsbgiqe1ssnsg1","Type: Network Security Group 
+Name: nbsbgiqe1ssnsg1 
+Namespace: nbsbgiqe1ssnsg1 
+Location: northeurope 
+ResourceGroup: NBSBgIqe1 
+Subnets: nbsbgiqe1subnet-1 
+SecurityRules[0].Name: allowSvcFabSMB 
+SecurityRules[0].Description:  
+SecurityRules[0].SourceAddressPrefix: VirtualNetwork 
+SecurityRules[0].Access: Allow 
+SecurityRules[1].Name: allowSvcFabCluser 
+SecurityRules[1].Description:  
+SecurityRules[1].SourceAddressPrefix: VirtualNetwork 
+SecurityRules[1].Access: Allow 
+SecurityRules[2].Name: allowSvcFabEphemeral 
+SecurityRules[2].Description:  
+SecurityRules[2].SourceAddressPrefix: VirtualNetwork 
+SecurityRules[2].Access: Allow 
+SecurityRules[3].Name: allowSvcFabPortal 
+SecurityRules[3].Description:  
+SecurityRules[3].SourceAddressPrefix: * 
+SecurityRules[3].Access: Allow 
+SecurityRules[4].Name: allowSvcFabClient 
+SecurityRules[4].Description:  
+SecurityRules[4].SourceAddressPrefix: * 
+SecurityRules[4].Access: Allow 
+SecurityRules[5].Name: allowVNetRDP 
+SecurityRules[5].Description:  
+SecurityRules[5].SourceAddressPrefix: VirtualNetwork 
+SecurityRules[5].Access: Allow 
+SecurityRules[6].Name: Allow-443 
+SecurityRules[6].Description: Allow-443 
+SecurityRules[6].SourceAddressPrefix: * 
+SecurityRules[6].Access: Allow 
+Network Interfaces: 
+DefaultSecurityRules[0].Name: AllowVnetInBound 
+DefaultSecurityRules[0].Description: Allow inbound traffic from all VMs in VNET 
+DefaultSecurityRules[0].SourceAddressPrefix: VirtualNetwork 
+DefaultSecurityRules[0].Access: Allow 
+DefaultSecurityRules[1].Name: AllowAzureLoadBalancerInBound 
+DefaultSecurityRules[1].Description: Allow inbound traffic from azure load balancer 
+DefaultSecurityRules[1].SourceAddressPrefix: AzureLoadBalancer 
+DefaultSecurityRules[1].Access: Allow 
+DefaultSecurityRules[2].Name: DenyAllInBound 
+DefaultSecurityRules[2].Description: Deny all inbound traffic 
+DefaultSecurityRules[2].SourceAddressPrefix: * 
+DefaultSecurityRules[2].Access: Deny 
+DefaultSecurityRules[3].Name: AllowVnetOutBound 
+DefaultSecurityRules[3].Description: Allow outbound traffic from all VMs to all VMs in VNET 
+DefaultSecurityRules[3].SourceAddressPrefix: VirtualNetwork 
+DefaultSecurityRules[3].Access: Allow 
+DefaultSecurityRules[4].Name: AllowInternetOutBound 
+DefaultSecurityRules[4].Description: Allow outbound traffic from all VMs to Internet 
+DefaultSecurityRules[4].SourceAddressPrefix: * 
+DefaultSecurityRules[4].Access: Allow 
+DefaultSecurityRules[5].Name: DenyAllOutBound 
+DefaultSecurityRules[5].Description: Deny all outbound traffic 
+DefaultSecurityRules[5].SourceAddressPrefix: * 
+DefaultSecurityRules[5].Access: Deny 
+ProvisioningState: Succeeded"
+"nbsbgiqe1AppInsights","Type: Application Insights 
+Location: northeurope 
+ResourceGroup: NBSBgIqe1 
+PricingPlan: Basic 
+IsCapped: False 
+DailyCap: 20 GB"
+"nbsbgiqe1adls","Type: Datalake Store 
+Location: northeurope 
+ResourceGroup: NBSBgIqe1"
+"nbsbgiqe1adla","Type: Datalake Analytics 
+Location: northeurope 
+ResourceGroup: NBSBgIqe1"
+"nbsbgiqe1-appgateway","Type: Application Gateway 
+Location: northeurope 
+ResourceGroup: NBSBgIqe1 
+Sku Name: Standard_Small 
+Sku Tier: Standard 
+Sku Capacity: 1"
+"api-nbsbgiqe1","Type: API Management 
+Location: North Europe 
+ResourceGroup: NBSBgIqe1 
+Sku: Basic 
+Capacity: 1"
