@@ -233,6 +233,9 @@ Goal, triggers, actions, future
 	
 	• Future - will it be useful in the future? Difficult to maintain? 
 
+Are you looking for automation ideas? https://community.spiceworks.com/topic/1926925-what-have-you-automated-using-powershell
+More real life automation ideas https://www.reddit.com/r/PowerShell/comments/hl1fxy/what_have_you_done_in_powershell_to_automate_your/
+
 ## PowerShell Security 
 
 * PowerShell give you a wide scope of access within a system such as a windows machine, azure or microsft 365 resource. 
