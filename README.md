@@ -11,6 +11,11 @@
 
 [PowerShell Automation](https://github.com/taherkhan30/Powershell-Scripts#powershell-automation)
 
+[PowerShell Security](https://github.com/taherkhan30/Powershell-Scripts#powershell-security)
+
+[Useful Commands](https://github.com/taherkhan30/Powershell-Scripts#useful-commands)
+
+[Community resources](https://github.com/taherkhan30/Powershell-Scripts#powershell-resources)
 
 ## Why PowerShell?
 
