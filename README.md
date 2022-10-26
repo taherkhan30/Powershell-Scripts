@@ -1,6 +1,16 @@
 # Powershell-Cheatsheet
 
 ## Contents 
+[Why PowerShell?](https://github.com/taherkhan30/Powershell-Scripts#why-powershell)
+
+[PowerShell Basics ](https://github.com/taherkhan30/Powershell-Scripts#powershell-basics)
+
+[Azure Powershell ](https://github.com/taherkhan30/Powershell-Scripts#azure-powershell)
+
+[Powershell DSC for Configuration Management](https://github.com/taherkhan30/Powershell-Scripts#powershell-dsc)
+
+[PowerShell Automation](https://github.com/taherkhan30/Powershell-Scripts#powershell-automation)
+
 
 ## Why PowerShell?
 
@@ -29,7 +39,7 @@
 
 **Modules** - packages of related ps components tha we can install in our system 
 
-## Setting up VSCode for Powershell 
+### Setting up VSCode for Powershell 
 
 Download VSCode from here  [Get VSCode](https://code.visualstudio.com/download)
 
