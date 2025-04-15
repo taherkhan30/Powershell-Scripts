@@ -191,9 +191,23 @@ $myobject.OSVersion
 
 ###### Accounts and Subscriptions
 
-    Connect-AZaccount 
+	$PSVersionTable.PSVersion
+	
+	Get-Module -Name AzureRM -ListAvailable
+	
+	Get-Module -Name AzureRM -ListAvailable
+	
+	Get-ExecutionPolicy -List
+	
+	Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+	
+	Install-Module -Name Az -Repository PSGallery -Force
+	
+	Update-Module -Name Az -Force
 
-    Select-AZSubscription -SubscriptionName "string" 
+	Connect-AZaccount 
+	
+	Select-AZSubscription -SubscriptionName "string" 
 
 ###### Virtual Machines 
 
