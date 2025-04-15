@@ -214,6 +214,27 @@ $myobject.OSVersion
 Examples script which deallocates a VM [Deallocate VM](https://github.com/taherkhan30/PowerShell-Scripts/blob/main/jumpbox-automation.ps1 
 ) 
 
+###### Things to automate as an Azure Engineer 
+infrastructure automation 
+
+cost management 
+
+security and compliance 
+
+backup and recovery 
+
+monitoring and lerts 
+
+devops integratoin 
+
+governance and reporting 
+
+identity and access 
+
+misc 
+
+
+
 ## Powershell DSC 
 
 Pull and push model 
