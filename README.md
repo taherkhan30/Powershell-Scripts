@@ -1,5 +1,7 @@
 # Powershell-Cheatsheet
 
+A place to put all my powershell knowlege in one place, share with others and access it when I need it for work.
+
 ## Contents 
 [Why PowerShell?](https://github.com/taherkhan30/Powershell-Scripts#why-powershell)
 
